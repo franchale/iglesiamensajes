@@ -1,5 +1,6 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
+  
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,201 +9,422 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <style>
+      .table-compacta th,
+      .table-compacta td {
+        padding-top: 0px !important;    /* Ajusta el número a tu gusto */
+        padding-bottom: 0px !important; /* !important asegura que gane a Bootstrap */
+      }
+      
+      .lista-vinetas-alineadas .list-group-item {
+          position: relative;
+          /* Deja espacio a la izquierda para que el punto no tape el texto */
+          padding-left: 2rem !important; 
+      }
+    
+      .lista-vinetas-alineadas .list-group-item::before {
+        /* Crea el punto de la viñeta */
+        content: "";
+        position: absolute;
+        left: 0.75rem; /* Distancia desde el borde izquierdo del cuadro */
+        top: 50%;     /* Lo baja a la mitad del contenedor */
+        transform: translateY(-50%); /* Lo centra perfectamente con el texto */
+        
+        /* Tamaño y forma del punto */
+        width: 6px;
+        height: 6px;
+        background-color: #212529; /* Color del punto (oscuro por defecto) */
+        border-radius: 50%;
+      }
+
+      /* fuente de letra */
+      .fuente-comic {
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+      }
+
+    </style>
+
     <title>Iglesia la Palma en Cristo - Mensajes del día</title>
   </head>
+
   <body class="p-0 m-0">
     <div class="container-fluid p-0">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="10000" data-pause="false">
-        <!-- Indicadores de slide
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="30000" data-pause="false">
         
+        <!-- Indicadores de slide (Se sobreponen a el texto final de primer deslizador) 
+         <div class="carousel-indicators1">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          </div>
+        -->
+
+        <!--
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        -->
+
         <div class="carousel-inner">
           
-          <!-- Primer deslizador -->
+          <!-- **************************** -->
+          <!-- Primer deslizador - Horarios -->
+          <!-- **************************** -->
+
           <div class="carousel-item active">
             <div class="container-fluid m-3">
             
-            <!-- Imagen de logo -->
-            <div class="container-fluid text-center">
-              <div class="d-flex justify-content-center">
-                <img src="./img/logo_iglesialapalma.jpg" class="img-fluid" alt="Iglesia la Palma en Cristo">
+              <!-- Imagen de logo -->
+              <div class="container-fluid text-center">
+                <div class="d-flex justify-content-center">
+                  <img src="./img/logo_iglesialapalma.jpg" class="img-fluid" alt="Iglesia la Palma en Cristo">
+                </div>
+                <h3>
+                  <span style="background-color: black; color: white;">
+                    La Palma Baptist Church
+                  </span>
+                </h3>
               </div>
-              <h3>La Palma Baptist Church</h3>
-            </div>
-            
-            <!-- Tabla de horario -->
-            <div class="table-responsive w-100">
-              <table class="table" style="max-width: 850px; margin: 0 auto;">
-                <colgroup>
-                  <col style="width: 20%">
-                  <col style="width: 30%">
-                  <col style="width: 20%">
-                  <col style="width: 30%">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col" colspan="2">Horas de servicios</th>
-                    <th scope="col" colspan="2">Service Schedule</th>
+              
+              <!-- Tabla de horario -->
+              <div class="table-responsive w-100">
+                <table class="table table-sm" style="max-width: 850px; margin: 0 auto;">
+                  <colgroup>
+                    <col style="width: 20%">
+                    <col style="width: 30%">
+                    <col style="width: 20%">
+                    <col style="width: 30%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col" colspan="2">
+                        <span style="background-color: black; color: white;">
+                          Horas de servicios
+                        </span>
+                      </th>
+                      <th scope="col" colspan="2">
+                        <span style="background-color: black; color: white;">
+                          Service Schedule
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span style="background-color: black; color: white;"><b>Domingo</b></span></td>
+                      <td>9:45</td>
+                      <td><span style="background-color: black; color: white;"><b>Sunday</b></span></td>
+                      <td>9:45</td>
+                    </tr>
+                    <tr>
+                      <td></td><td id="diaDom_etiqueta1">Escuela Dominical</td>
+                      <td></td><td id="diaSun_etiqueta1">Sunday School</td>
+                    </tr>
+                    <tr>
+                      <td></td><td>11:00 AM</td>
+                      <td></td><td>11:00 AM</td>
+                    </tr>
+                    <tr>
+                      <td></td><td id="diaDom_etiqueta2">Adoración y sermón</td>
+                      <td></td><td id="diaSun_etiqueta2">Worship and sermón</td>
+                    </tr>
+                    <tr>
+                      <td></td><td>05:30 PM</td>
+                      <td></td><td>05:30 AM</td>
+                    </tr>
+                    <tr>
+                      <td></td><td id="diaDom_etiqueta3">Adoración y Compañerismo</td>
+                      <td></td><td id="diaSun_etiqueta3">Worship & Fellowship</td>
+                    </tr>
+                    <tr>
+                      <td><span style="background-color: black; color: white;"><b>Miercoles</b></span></td>
+                      <td>5:30 PM</td>
+                      <td><span style="background-color: black; color: white;"><b>Wednesday</b></span></td>
+                      <td>5:30 PM</td>
+                    </tr>
+                    <tr>
+                      <td></td><td id="diaMie_etiqueta1">Oración Y Adoración</td>
+                      <td></td><td id="diaWed_etiqueta1">Prayer & Worship</td>
+                    </tr>
+                    <tr>
+                      <td><span style="background-color: black; color: white;"><b>Jueves</b></span></td>
+                      <td>11:00 AM</td>
+                      <td><span style="background-color: black; color: white;"><b>Thursday</b></span></td>
+                      <td>11:00 AM</td>
+                    </tr>
+                    <tr>
+                      <td></td><td id="diaJue_etiqueta1">Oración Y Adoración</td>
+                      <td></td><td id="diahu_etiqueta1">Prayer & Worship</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+			
+			        <br><br>
+			
+             <!-- Pie de pagina -->
+              <div class="table-responsive w-100">
+                <table class="table table-compacta table-borderless" style="max-width: 850px; margin: 0 auto;">
+                  <tbody>
+                    <tr><td><div class="text-center"><b>Pastor Alejandro Chacón</b></div></td></tr>
+                    <tr><td><hr class="w-100 border-secondary"></td></tr>
+                    <tr>
+                      <td>
+                        <span style="background-color: black; color: white;">182 Maria St, San Benito, TX, 785686, Tel. (956)247-9644</span>
+                      </td>
                   </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><b>Domingo</b></td><td>9:45</td>
-                    <td><b>Sunday</b></td><td>9:45</td>
-                  </tr>
-                  <tr>
-                    <td></td><td>Escuela Dominical</td>
-                    <td></td><td>Sunday School</td>
-                  </tr>
-                  <tr>
-                    <td></td><td>11:00 AM</td>
-                    <td></td><td>11:00 AM</td>
-                  </tr>
-                  <tr>
-                    <td></td><td>Adoración y sermón</td>
-                    <td></td><td>Worship and sermón</td>
-                  </tr>
-                  <tr>
-                    <td></td><td>05:30 PM</td>
-                    <td></td><td>05:30 AM</td>
-                  </tr>
-                  <tr>
-                    <td></td><td>Adoración y Compañerismo</td>
-                    <td></td><td>Worship & Fellowship</td>
-                  </tr>
-                  <tr>
-                    <td><b>Miercoles</b></td><td>5:30 PM</td>
-                    <td><b>Wednesday</b></td><td>5:30 PM</td>
-                  </tr>
-                  <tr>
-                    <td></td><td>Oración Y Adoración</td>
-                    <td></td><td>Prayer & Worship</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                  </tbody>
+                </table>
+              </div>
 
-            <!-- Pie de tabla -->
-            <br><div class="text-center"><b>Pastor Alejandro Chacón</b></div>
-            <br>182 Maria St, San Benito, TX, 785686, Tel. (956)247-9644
-
-            <!-- Footer falso -->
-            <hr class="w-100 border-secondary">
-            <small class="text-muted px-4">
-              El amor sea sin fingimiento. Aborreced lo malo, seguid lo bueno. 10 Amaos los unos a los otros con amor fraternal; en cuanto a honra, prefiriéndoos los unos a los otros. 14 Bendecid a los que os persiguen; bendecid, y no maldigáis. 17 No paguéis a nadie mal por mal; procurad lo bueno delante de todos los hombres. Romanos 12:9, 10, 14,17 Reina-Valera 1960 (RVR1960) Copyright © 1960 by, American Bible Society
-            </small>
+ 
+                       
+              <!-- <small class="text-muted px-4"> -->
+              <!-- <small>
+                9  El amor sea sin fingimiento. Aborreced lo malo, seguid lo bueno. 
+                10 Amaos los unos a los otros con amor fraternal; en cuanto a honra, prefiriéndoos los unos a los otros. 
+                14 Bendecid a los que os persiguen; bendecid, y no maldigáis. 
+                17 No paguéis a nadie mal por mal; procurad lo bueno delante de todos los hombres. 
+                Romanos 12:9, 10, 14,17 Reina-Valera 1960 (RVR1960) Copyright © 1960 by, American Bible Society
+              </small> -->
 
             </div>
           </div>
 
-          <!-- ****************** -->
-          <!-- Segundo deslizador -->
-          <!-- ****************** -->
+          <!-- ************************** -->
+          <!-- Segundo deslizador Portada -->
+          <!-- ************************** -->
+          
           <div class="carousel-item">
-            
-              <!-- Versiculo con fondo -->
-              <div class="container-fluid text-center">
-                <section class="container my-5">
-                  <div class="bg-light p-5 rounded-3 border">
-                    <h2 class="fw-bold mb-3">La Palma En Cristo Iglesia Bautista</h2>
-                    <p class="lead mb-0">
-                      No formen yunta con los incrédulos. ¿Que tienen en común la justicia y la maldad? ¿O que comunión puede tener la luz con la oscuridad? ¿Que armonia tiene Cristo con el Diablo? ¿Que tiene en común un creyente con un incredulo?
-                      <br><br>
-                      II Corintios 6:14-15
-                    </p>
-                  </div>
-                </section>
-              </div>
-            
-              <!-- Versiculo sin fondo -->
-              <div class="container-fluid text-left">
-                <section class="container py-4">
-                  <div class="row">
-                    <div class="col-12">
-                      <!-- Texto sin fondo ni bordes (comportamiento predeterminado) -->
-                      <p class="mb-0">
-                        <b><u>2 Corintios 6:14-15</u></b> No os unáis en yugo desigual con los incrédulos; porque ¿qué compañerismo tiene la justicia con la injusticia? ¿Y qué comunión la luz con las tinieblas? 15¿Y qué concordia Cristo con Belial? ¿O qué parte el creyente con el incrédulo
-                      </p>
+          
+            <table class="table table-sm" style="max-width: 850px; margin: 0 auto;">
+              <tr>
+                <td>
+                  <!-- Imagen de iglesia -->
+                  
+                  <div class="container-fluid text-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="./img/iglesialapalma.png" class="img-fluid" alt="Iglesia la Palma en Cristo">
                     </div>
                   </div>
-                </section>
-              </div>
 
-              <!-- Información del culto-->
-              <div class="container my-5">
-                <div class="p-4 text-center border border-3 rounded-3" style="border-style: double !important; background-color: transparent;">
-                  <p class="mb-0">
-                    <b>Culto De Alabanza Y Adoración</b>
-                    <br><br>
-                    Domingo 25 De Octubre Del 2026
-                    <br><br>
-                    <b>¡ No Participes De Los Pecados Ajenos !
-                    <br>
-                    ¿ Porque Concordancia Tiene Cristo Con Belial ?
-                    <br>
-                    1 Timoteo 5:13-21, 2 Corintios 6:14-15</b>
-                    <br><br>
-                    Servicio Matutino 11:00 AM
-                  </p>
-                </div>
-              </div>
+                  
+                        
+                  <!-- Versiculo sin fondo -->
+                  
+                  <div class="container-fluid text-left mb-0">
+                    <section class="container py-4">
+                        <div class="row">
+                          <div class="col-12">
+                              <!-- Texto sin fondo ni bordes (comportamiento predeterminado) -->
+                              <p class="mb-0">
+                                <b><u>2 Corintios 6:14-15</u></b>14 No os unáis en yugo desigual con los incrédulos; 
+                                porque ¿qué compañerismo tiene la justicia con la injusticia? ¿Y qué comunión la luz con las tinieblas? 
+                                15¿Y qué concordia Cristo con Belial? ¿O qué parte el creyente con el incrédulo?
+                              </p>
+                          </div>
+                        </div>
+                    </section>
+                  </div>
 
+                  <!-- Información del culto-->
+                        
+                  <div class="container my-2">
+                    <div class="p-4 text-center" style="border-style: double !important; background-color: transparent;">
+                        
+                      <table class="table table-sm table-borderless" style="max-width: 850px; margin: 0 auto;">
+                        <thead>
+                          <tr>
+                              <th scope="col" colspan="2"><h2>Culto De Alabanza Y Adoración</h2></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td id="tblCulto_linea1" >xxx</td></tr>
+                          <tr><td id="tblCulto_linea2">xxx</td></tr>
+                          <tr><td id="tblCulto_linea3">xxx</td></tr>
+                          <tr><td id="tblCulto_linea4">xxx</td></tr>
+                          <tr><td id="tblCulto_linea5">xxx</td></tr>
+                          <tr><td id="tblCulto_linea6">xxx</td></tr>
+                          <tr><td id="tblCulto_linea7">xxx</td></tr>
+                          <tr class="fw-bold"><td class="fw-bold" id="tblCulto_linea8">xxx</td></tr>
+                        </tbody>
+                      </table>
+                            
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
           </div>
 
-          <!-- ***************** -->
-          <!-- Tercer deslizador -->
-          <!-- ***************** -->
+          <!-- ****************************** -->
+          <!-- Tercer deslizador - Bienvenida -->
+          <!-- ****************************** -->
+          
           <div class="carousel-item">
-            <div class="container my-5">
-              <div class="p-4 text-left">
-                <h2 class="fw-bold mb-3">- Bienvenida -</h2>
-              
-                <p class="mb-0"><b><u>INVOCACIÓN</u></b></p>
-                <p style="font-size: 12px;"><i>Por Hno. René Rivas</i></p>
+            
+            <table class="table table-sm" style="max-width: 850px; margin: 0 auto;">
+              <tr>
+                <td>
+                  <div class="container my-1">
+                    <div class="p-4 text-left">
+                      <h2 class="fw-bold mb-3">- Bienvenida -</h2>
 
-                <p class="mb-0"><b><u>CANTO DE BIENVENIDA:</u></b></p>
-                <p class="mb-0" style="font-size: 15px;"><i>♪ Celebraremos Que Cristo Resucitó</i></p>
-                <p style="font-size: 12px;"><i>Dirigido por Hna. Rosie García</i></p>
+                      <p id="bienvenidaInvoca" style="font-size: 12px;"><i>Por Hno. René Rivas</i></p>
 
-                <p class="mb-0"><b><u>LECTURA BÍBLICA CONGREGACIONAL:</u></b></p>
-                <p class="mb-0" style="font-size: 15px;"><i>Proverbios 3:1-12 (RVR1960)</i></p>
-                <p class="mb-0" style="font-size: 12px;"><i>Por Hna. Arodi Ortega</i></p> 
-                <hr>
-                <p class="mb-0" style="font-size: 15px;"><i>Proverbs 3:1-12 New King James Version</i></p>
-                <p class="mb-0"style="font-size: 12px;"><i>By Sister Josie Hernandez</i></p>                
-                <hr>
+                      <p class="mb-0"><b><u>INVOCACIÓN</u></b></p>
+                      <p id="invocaPor" style="font-size: 12px;"><i>Por Hno. René Rivas</i></p>
 
-                <p class="mb-0"><b><u>ALABANZA Y ADORACIÓN.</u></b></p>
-                <p style="font-size: 12px;"><i>Dirigidos por Hna. Rosie García</i></p>        
-                
-                <p class="mb-0"><b><u>Cantos e Himnos:</u></b></p>
-                <p class="mb-0" style="font-size: 12px;">
-                  Himno: <br>
-                  Himno: <br>
-                  Himno: <br>
-                </p>
-                <p class="mb-0"><b><u>Videos:</u></b></p>
-                <p style="font-size: 12px;">(Youth Choice )</p>
+                      <p class="mb-0"><b><u>CANTO DE BIENVENIDA:</u></b></p>
+                      <p id="cantoBienvenida" class="mb-0" style="font-size: 15px;"><i>♪ Celebraremos Que Cristo Resucitó</i></p>
+                      <p id="cantoBienvenidaDirigidoPor" style="font-size: 12px;"><i>Dirigido por Hna. Rosie García</i></p>
 
-                <h2 class="fw-bold mb-3">- Sermón -</h2>
-                <p class="mb-0"><b><u>Mensaje</u></b></p>
-                <p class="mb-0"style="font-size: 12px;">
-                  ¡ No Participes De Los Pecados Ajenos ! <br>
-                  ¿ Porque Concordancia Tiene Cristo Con Belial ? <br>
-                  1 Timoteo 5:13-21, 2 Corintios 6:14-15 <br><br>
-                  Por Pastor Alejandro Chacón
-                </p>
+                      <p class="mb-0"><b><u>LECTURA BÍBLICA CONGREGACIONAL:</u></b></p>
+                      <p id="lecturaCongrega_es" class="mb-0" style="font-size: 15px;"><i>Proverbios 3:1-12 (RVR1960)</i></p>
+                      <p id="lecturaCongrega_esPor"class="mb-0" style="font-size: 12px;"><i>Por Hna. Arodi Ortega</i></p> 
+                      <hr>
+                      <p id="lecturaCongrega_en"class="mb-0" style="font-size: 15px;"><i>Proverbs 3:1-12 New King James Version</i></p>
+                      <p id="lecturaCongrega_enPor" class="mb-0"style="font-size: 12px;"><i>By Sister Josie Hernandez</i></p>                
+                      <hr>
 
-              </div>
-            </div>            
+                      <p class="mb-0"><b><u>ALABANZA Y ADORACIÓN.</u></b></p>
+                      <p id="alavanza_adoracion_por" style="font-size: 12px;"><i>Dirigidos por Hna. Rosie García</i></p>        
+
+                      <p class="mb-0"><b><u>Cantos e Himnos:</u></b></p>
+                      <p class="mb-0" style="font-size: 12px;">
+                        <ul >
+                          <li id="cantoseHimnos_uno"  style="font-size: 12px;">Himno 1:</li>
+                          <li id="cantoseHimnos_dos"  style="font-size: 12px;">Himno 2:</li>
+                          <li id="cantoseHimnos_tres" style="font-size: 12px;">Himno 3:</li>
+                        </ul>
+                      </p>
+
+                      <p class="mb-0"><b><u>Videos:</u></b>
+                        <ul>
+                          <li id="videos_Uno" style="font-size: 12px;"></li>
+                          <li id="Videos_Dos" style="font-size: 12px;"></li>
+                        </ul>
+                      </p>
+
+                      <h2 class="fw-bold mb-3">- Sermón -</h2>
+                      <p id="titulo" class="mb-0"><b><u>Mensaje</u></b></p>
+                      <p id="texto_biblico" class="mb-0"style="font-size: 12px;">
+                        ¡ No Participes De Los Pecados Ajenos ! <br>
+                        ¿ Porque Concordancia Tiene Cristo Con Belial ? <br>
+                        1 Timoteo 5:13-21, 2 Corintios 6:14-15 <br><br>
+                      </p>
+                      <p id="predicador" class="mb-0"style="font-size: 12px;">Por Pastor Alejandro Chacón</p>
+
+                    </div>
+                  </div>                   
+                </td>
+              </tr>
+            </table>
+            
           </div>
+
+          <!-- ************************************************* -->
+          <!-- Cuarto deslizador - Diezmos y Ofrendas - Anuncios -->
+          <!-- ************************************************* -->
+          
+          <div class="carousel-item">
+
+            <table class="table table-sm" style="max-width: 850px; margin: 0 auto;">
+              <tr>
+                <td>
+                  <div class="container my-1">
+                    <div class="p-4 text-left">
+                      <p class="fuente-comic mb-0"><b><u>DIEZMOS Y OFRENDAS</u></b></p>
+                      <p id="oracion_ofrendas_txtFijo" class="fuente-comic mb-0" style="font-size: 12px;">Oración por los diezmos y/u ofrendas</p>
+                      <p id="oracion_ofrendas_por" class="fuente-comic w-bold mb-0" style="font-size: 12px;"><b>Por Hna. Rosie García</b></p>
+
+                      <div class="container-fluid text-center">
+                        <p id="cantoBienvenidaDirigidoPor" class="fuente-comic text-center fw-bold" style="font-size: 12px;">
+                          A los miembros de la iglesia por favor deposíte sus ofrendas - <br> en la urna a la entrada del templo.
+                        </p>
+                      </div>
+                      
+                      <p class="text-center" style="font-size: 25px;"><b>- Anuncios -</b></p>
+                      <p id="anuncios_texto_11" style="font-size: 15px;">
+                        Atención” Invitamos A Todos Nuestros Hermanos a que nos acompañen al servicio de oración horario:  Miércoles a las 5:30 PM
+                      </p>
+
+                      <p id="anuncios_texto_12" style="font-size: 15px;">
+                        LA ESCUELA DOMINICAL ESTÁ ABIERTA PARA:   LOS NIÑOS DE 1-5 AÑOS,PRIMARIA (ELEMENTARY), JÓVENES, Y ADULTOS.
+                      </p>
+
+                      <p id="anuncios_texto_13" style="font-size: 15px;">
+                        “HOY 5:30 PM” Servicio de Adoración Y Testimonios, Compañerismo.
+                      </p>
+                      
+                      <p id="anuncios_texto_14" style="font-size: 15px;">
+                        “NEW” Jueves a las 11:00 AM Estudio Bíblico Con Hermana Arodi Ortega
+                      </p>      
+
+                      <p class="fuente-comic mb-0">&#10148;<span style="background-color: black; color: white;"><b><u>Recuerde Oremos Por:</u></b></span></p>
+                      <p class="fuente-comic mb-0" style="font-size: 15px;">
+                        &#10148; Sanidad:
+                        <ul class="mb-0">
+                          <li id="oremos_por_sanidad1" class="fuente-comic mb-0" style="font-size: 12px;">Oración por Hna. Frances Carrizales que Dios le restaure la salud.</li>
+                          <li id="oremos_por_sanidad2" class="fuente-comic mb-0" style="font-size: 12px;">Por Hna. Eva Servin que próximo Martes viaja a Illinois a ver su familia.</li>
+                          <li id="oremos_por_sanidad3" class="fuente-comic mb-0" style="font-size: 12px;">Por Francisco Gascon delicado de salud.</li>
+                          <li id="oremos_por_sanidad4" class="fuente-comic mb-0" style="font-size: 12px;">Por Ernesto Cisneros que lo operaron de la columna.</li>
+                        </ul>
+                        <label id="engeneral" class="fuente-comic mb-0" style="font-size: 15px;">&#10148; Por todos las Hermanos(as) que no pueden asistir a la Iglesia.</label>
+                      </p>
+                      <!--&#10003;-->
+                      <p class="fuente-comic mb-0" style="font-size: 15px;">
+                        <span style="background-color: gray; color: black;">
+                          <b><u>AGRADECIMIENTOS Y/O PETICIONES:</u></b>
+                        </span>
+                      </p>
+                        
+                      <p id="agradecimientos_y_peticiones" class="fuente-comic w-bold" style="font-size: 12px;"><b>Por Hno. René Rivas</b></p>
+
+                      <p class="fuente-comic mb-0" style="font-size: 15px;">
+                        <span style="background-color: gray; color: black;">
+                          <b><u>ORACIÓN PASTORAL Y DESPEDIDA:</u></b>
+                        </span>
+                      </p> 
+                      <p id="oracion_pastoral_despedida" class="fuente-comic w-bold" style="font-size: 12px;"><b>Por Pastor Alejandro Chacón</b></p>
+
+                      <p id="otros_mensajes_especiales_uno" class="fuente-comic mb-0" style="font-size: 12px;"><b><u>OTROS</u></b></p>
+                      <p id="otros_mensajes_especiales_dos"" class="fuente-comic mb-0" style="font-size: 12px;"><b><u>MENSAJES</u></b></p>
+                      <p id="otros_mensajes_especiales_tres"" class="fuente-comic" style="font-size: 12px;"><b><u>ESPECIALES</u></b></p>
+
+
+                      <hr style="border: none; border-top: 2px solid #87CEEB; opacity: 100;">
+                      
+                      <p id="pie_pagina"" class="fuente-comic" style="font-size: 11px;">
+                        <b>Filipenses 4:4-7 4</b> 
+                        Regocijaos en el Señor siempre. Otra vez digo: ¡Regocijaos! 
+                        5 Vuestra gentileza sea conocida de todos los hombres. El Señor está cerca. 
+                        6 Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de 
+                        Dios en toda oración y ruego, con acción de gracias. 7 Y la paz de Dios, 
+                        que sobrepasa todo entendimiento, guardará vuestros corazones y vuestros 
+                        pensamientos en Cristo Jesús.
+                      </p>
+
+                      <hr style="border: none; border-top: 2px solid #87CEEB; opacity: 100;">
+
+                    </div>
+                  </div> 
+                </td>
+              </tr>
+            </table>
+
+          </div>
+
         </div>
-        <!-- Los controles quitados
+
+        <!-- Los controles quitados  
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Anterior</span>
@@ -212,6 +434,17 @@
           <span class="sr-only">Siguiente</span>
         </a>
         -->
+
+        <!-- Controles del carrusel -->
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+       
       </div>
     </div>
 
@@ -221,6 +454,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <!-- invoca el script que acutaliza los mensajes -->
+    
+	  <script src="./scripts/mensajes-iglesia.js"></script>
+
+    <!-- script con funciones para activar pantalla completa -->
+    
     <script>
       function entrarPantallaCompleta() {
         const elem = document.documentElement;
@@ -246,4 +485,5 @@
     </script>
 
   </body>
+
 </html>

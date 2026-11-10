@@ -1,0 +1,137 @@
+{
+	"nombreiglesia": "Iglesia Bautista La Palma en Cristo",
+	"horario_dias": [
+		{
+			"dia": "Domingo",
+			"hora1": "09:45 AM",
+			"hora2": "11:00 AM",
+			"hora3": "05:30 PM",
+			"etiqueta1": "Escuela Dominical",
+			"etiqueta2": "Adoración Y Sermón",
+			"etiqueta3": "Adoración y Compañerismo"
+		},
+		{
+			"dia": "Sunday",
+			"hora1": "09:45 AM",
+			"hora2": "11:00 AM",
+			"hora3": "05:30 PM",
+			"etiqueta1": "Sunday School",
+			"etiqueta2": "Worship and Sermon",
+			"etiqueta3": "Worship & Fellowship"
+		},
+		{
+			"dia": "Miercoles",
+			"hora1": "05:30 PM",
+			"hora2": "",
+			"hora3": "",
+			"etiqueta1": "Oración Y Adoración",
+			"etiqueta2": "",
+			"etiqueta3": ""
+		},
+		{
+			"dia": "Wednesday",
+			"hora1": "05:30 PM",
+			"hora2": "",
+			"hora3": "",
+			"etiqueta1": "Prayer &  Worship",
+			"etiqueta2": "",
+			"etiqueta3": ""
+		},
+		{
+			"dia": "Jueves",
+			"hora1": "11:00 AM",
+			"hora2": "",
+			"hora3": "",
+			"etiqueta1": "Discipulado Cristiano",
+			"etiqueta2": "",
+			"etiqueta3": ""
+		},
+		{
+			"dia": "Thursday",
+			"hora1": "11:00 AM",
+			"hora2": "",
+			"hora3": "",
+			"etiqueta1": "Cristian Disciple Ship",
+			"etiqueta2": "",
+			"etiqueta3": ""
+		}
+	],
+	"portada": {
+		"linea1": "Domingo 8 De Noviembre Del 2026",
+		"linea2": "",
+		"linea3": "La Vida Del Cristiano Es Una Guerra De Principio A Fin",
+		"linea4": "¡Mantente firme en el camino hasta que llegues a la meta!",
+		"linea5": "2 Timoteo 4:1-22",
+		"linea6": "",
+		"linea7": "",
+		"linea8": "Servicio Matutino 11:00 AM"
+	},
+	"bienvenida_por": "Por Hno. René Rivas",
+	"invocacion_por": "Por Hno. René Rivas",
+	"canto_bienvenida": {
+		"canto": "♪ Celebraremos Que Cristo Resucitó",
+		"dirigido_por": "Dirigido por Hna. Rosie Garcia"
+	},
+	"lectura_biblica_congregacional": {
+		"texto_es": "Salmos 19:7-14  (RVR1960)",
+		"leido_por_es": "Por Hna. Arodi Ortega",
+		"texto_en": "Psalms 19:7-14  (New King Jmes version)",
+		"leido_por_en": "By Sister Eva Servin"
+	},
+	"alavanza_adoracion_por": "Dirección: Hna. Rosie García",
+	"cantos_himnos": {
+		"uno": "Himno: Nadie pudo amarme como Cristo Canal  Sublime Gracia",
+		"dos": "Himno: Tierra De Palestina pcJovenes2",
+		"tres": "Himno: Count Your blessings Faith And Grace"
+	},
+	"videos": {
+		"uno": "(Youth Choice)",
+		"dos": "(Youth Choice)"
+	},
+	"sermon": {
+		"titulo": "La Vida Del Cristiano Es Una Guerra De Principio A Fin",
+		"texto_biblico": "¡Mantente firme en el camino hasta que llegues a la meta! <br> 2 Timoteo 4:1-22 <br>  <br><br>",
+		"predicador": "Pastor Alejandro Chacón"
+	},
+	"oracion_ofrendas_por": "Por Hna. Rosie Garcia",
+	"anuncios": {
+		"texto_11": "“Atención”",
+		"texto_12": "Invitamos",
+		"texto_13": "A Todos Nuestros Hermanos",
+		"texto_14": "a que nos acompañen al servicio de oración",
+		"texto_15": " horario:  Miércoles a las 5:30 PM",
+		"texto_21": "LA ESCUELA DOMINICAL ESTÁ ABIERTA PARA:",
+		"texto_22": "",
+		"texto_23": "",
+		"texto_24": " LOS NIÑOS DE 1-5 AÑOS, PRIMARIA (ELEMENTARY), JÓVENES, Y ADULTOS.",
+		"texto_25": "",
+		"texto_31": "“Próximo Domingo”",
+		"texto_32": "15 de Noviembre tendremos la comida del dia de dar gracias..",
+		"texto_33": "",
+		"texto_34": "",
+		"texto_35": "",
+		"texto_41": "“NEW”",
+		"texto_42": "Jueves a las 11:00 AM Estudio Bíblico Con Hermana Arodi Ortega",
+		"texto_43": "",
+		"texto_44": "",
+		"texto_45": ""
+	},
+	"oremos_por": {
+		"sanidad1": "Oración por Hna. Frances Carrizales que Dios le restaure la salud",
+		"sanidad2": "Por Hnos. Rene y Marti Rivas que van Houston para examen anual de revisión del cancer.",
+		"sanidad3": "Por Francisco Gascon delicado de salud",
+		"sanidad4": "Por Ernesto Cisneros que lo operaron de la columna, Por Rolando Gonzales y Eli Rivera",
+		"engeneral": "Por todos las Hermanos(as) que no pueden asistir a la Iglesia"
+	},
+	"agradecimientos_y_peticiones": "Por Hno. René Rivas",
+	"oracion_pastoral_despedida": "Por Pastor Alejandro",
+	"otros_mensajes_especiales": {
+		"uno": "",
+		"dos": "Recuerden que hoy a las 4:00PM tendremos el servicio de Alabanza, Adoración y Compañerismo.",
+		"tres": ""
+	},
+	"texto_al_pie_pagina": {
+		"en_negrita": "Filipenses 4:4-7",
+		"normal": "4 Regocijaos en el Señor siempre. Otra vez digo: ¡Regocijaos! 5 Vuestra gentileza sea conocida de todos los hombres. El Señor está cerca. 6 Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias. 7 Y la paz de Dios, que sobrepasa todo entendimiento, guardará vuestros corazones y vuestros pensamientos en Cristo Jesús."
+	}
+}
